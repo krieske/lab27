@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "GetWeather";
+}
+
+@*<h2>Your weather forecast for the next 13 days:</h2>*@
+
+<div class="row">
+    <div class="col-md-4">
+        @for (int i = 0; i < 13; i++)
+        {
+            
+                <p><img src="@ViewBag.forecastPic[i]" /></p>
+                <p>@ViewBag.forecast[i]</p>
+            
+        }
+    </div>
+</div>

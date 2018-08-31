@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<form action="/Home/GetWeather" method="post">
+    <label>Latitude:</label> <input type="text" name="lat" class="form-control" />
+    <label>Longitude:</label> <input type="text" name="lon" class="form-control" />
+    <br /><input type="submit" value="Save" class="form-control" />
+
+
+</form>
+
